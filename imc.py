@@ -2,10 +2,27 @@ import math
 Mens_err= ('Por favor ingrese un valor valido')
 Form_err= ('Formato invalido, intente nuevamente.\n')
 #pedir nombre al usuario.
-ap= str(input('Por favor digite su apellido paterno.\n'))
-am= str(input('Por favor digite su apellido materno.\n'))
-nom= str(input('Por favor ingrese su(s) nombre(s). \n'))
-
+ape =False
+while ape==False:
+    ap= str(input('Por favor digite su apellido paterno.\n'))
+    if ap is None:
+        print(Mens_err)
+    else:
+        ape= True
+ama= False
+while ama==False:
+    am= str(input('Por favor digite su apellido materno.\n'))
+    if am is None:
+        print(Mens_err)
+    else:
+        ama= True
+eda=False
+while eda==False:
+    nom= str(input('Por favor ingrese su(s) nombre(s). \n'))
+    if nom is None:
+        print(Mens_err)
+    else:
+        eda=True
 #pedir edad al usuario
 ed_con= False
 while ed_con == False:
@@ -17,7 +34,6 @@ while ed_con == False:
             print(Mens_err)
     except ValueError:
         print(Form_err)
-
 #pedir peso al usuario
 pes_con= False
 while pes_con==False:
@@ -29,7 +45,6 @@ while pes_con==False:
             print (Mens_err)
     except ValueError:
         print(Form_err)
-
 #Pedir estatura al usuario
 ets_cond= False
 while ets_cond == False:
@@ -41,7 +56,6 @@ while ets_cond == False:
             print(Mens_err)
     except ValueError:
         print(Form_err)
-
 #calcular imc
 imc= (peso / (estatura**2))
 print(f'Hola, {nom}, {ap}, {am}, su imc es de {math.trunc(imc)}')
