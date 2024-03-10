@@ -1,0 +1,2 @@
+El archivo nombrado con coordenadas corresponde a un programa que le pide dos numeros enteros al usuario a fin de encontrar el cuadrante en el que se encuentra las coordenadas establecidas.
+El aechivo nombrado con palabras corresponde a un programa el cual le pide al usuario ingresar una palabra, posterior a eso evalua si la palabra cumple con las especificaciones establecidas y arroja un resultado con respecto al analisis efectuado.
